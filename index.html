@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <header>
+        <h1 id="title">Hello there!!</h1>
+        <p id="description">Thank you for taking out time to fill out this survey :)<br>It would really help us to serve you better in the future.</p>
+    </header>
+    <main>
+        <form action="#" id="survey-form">
+            <div>
+                <label for="name" id="name-label">Full Name</label><br>
+                <input type="text" id="name" placeholder="Your Full Name" required>
+            </div>
+            <div>
+                <label for="email" id="email-label">Email Id</label><br>
+                <input type="email" id="email" placeholder="Your Email Id" required>
+            </div>
+            <div>
+                <label for="number" id="number-label">Age</label><br>
+                <input type="number" id="number" placeholder="Your Age" min="10" max="99">
+            </div>
+            <div>
+                <label for="dropdown" class="bold">How much time in a day do you spend on our app?</label><br>
+                <select id="dropdown">
+                    <option value="less-one">Less that 1 hour</option>
+                    <option value="one-three">1 to 3 hours</option>
+                    <option value="three-five">3 to 5 hours</option>
+                    <option value="more-five">More than 5 hours</option>
+                </select>
+            </div>
+            <div id="radio-bold">
+                <p class="bold">Would you say you like the app?</p>
+                <input type="radio" name="like" id="yes" value="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" name="like" id="somewhat" value="somewhat">
+                <label for="somewhat">Somewhat</label>
+                <input type="radio" name="like" id="no" value="no">
+                <label for="no">No</label>
+            </div>
+            <div id="check-bold">
+                <p class="bold">What are some of the things you like about our app?</p>
+                <input type="checkbox" name="liked-features" id="ui" value="ui">
+                <label for="ui">User Interface</label>
+                <input type="checkbox" name="liked-features" id="features" value="features">
+                <label for="features">Features</label>
+                <input type="checkbox" name="liked-features" id="ease-of-use" value="ease">
+                <label for="ease-of-use">Ease of Use</label>
+                <input type="checkbox" name="liked-features" id="speed" value="speed">
+                <label for="speed">Speed</label>
+            </div>
+            <div id="textarea">
+                <label for="feedback" class="bold">Anything else you would like to add?</label><br>
+                <textarea id="feedback" rows="7" placeholder="Any additional comments."></textarea>
+            </div>
+            <button type="submit" id="submit">Submit<a href="#"></a></button>
+        </form>
+    </main>
+</body>
+</html>
